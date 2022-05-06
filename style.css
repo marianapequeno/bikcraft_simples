@@ -1,5 +1,4 @@
 
-
 /*CSS RESET*/
 *{
   padding: 0;
@@ -19,8 +18,29 @@ img{
 }
 
 /*ESTILOS GERAIS*/
+:root{
+  --cor-primaria: #ee2211;
+  --cor-primaria-hover: #990000;
+  --cor-de-fundo1: #f7f7f7;
+  --cor-de-fundo2: #ffffff;
+  --cor-de-texto1: #000000;
+  --cor-titulo-vantagens: #c6c6c6;
+  --cor-onda: url(img/onda-light.svg);
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --cor-de-fundo1: #111111;
+    --cor-de-fundo2: #000000;
+    --cor-de-texto1: #ffffff;
+    --cor-titulo-vantagens: #ffffff33;
+    --cor-onda: url(img/onda-dark.svg);
+  }
+}
+
 body{
-  background-color: #f7f7f7;
+  background-color: var(--cor-de-fundo1);
+  color: var(--cor-de-texto1);
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 60px;
   display: grid;
@@ -52,8 +72,8 @@ header nav ul{
 }
 
 header nav a{
-  background-color: #ffffff;
-  color: #000000;
+  background-color:var(--cor-de-fundo2);
+  color: var(--cor-de-texto1);
   text-transform: uppercase;
   border-radius: 5px;
   padding: 15px 30px;
@@ -61,7 +81,7 @@ header nav a{
 }
 
 header nav a:hover{
-  outline: 2px solid #ee2211;
+  outline: 2px solid var(--cor-primaria-hover);
 }
 
 /*MAIN*/
@@ -73,7 +93,7 @@ main{
 }
 
 .itemtexto1{
-  background-color: #ffffff;
+  background-color: var(--cor-de-fundo2);
   text-align: right;
   padding: 40px;
   align-content: center;
@@ -85,7 +105,7 @@ main{
 
 .itemtexto1::after{
   content: "";
-  background-color: #ee2211;
+  background-color: var(--cor-primaria);
   width: 70px;
   height: 4px;
   position: absolute;
@@ -98,7 +118,7 @@ main{
 }
 
 .itemtexto1 a{
-  background-color: #ee2211;
+  background-color: var(--cor-primaria);
   color: #ffffff;
   text-transform: uppercase;
   border-radius: 5px;
@@ -107,7 +127,7 @@ main{
 }
 
 .itemtexto1 a:hover{
-  background-color: #990000;
+  background-color: var(--cor-primaria-hover);
 }
 
 .imagem img{
@@ -118,9 +138,9 @@ main{
 }
 
 .titulo-vantagens{
-  background-color: #f7f7f7;
-  background-image: url(img/onda.svg);
-  color: #c6c6c6;
+  background-color: var(--cor-de-fundo1);
+  background-image: var(--cor-onda);
+  color: var(--cor-titulo-vantagens);
   text-transform: uppercase;
   padding: 40px;
   margin: auto;
@@ -133,7 +153,7 @@ main{
 }
 
 .lista-vantagens{
-  background-color: #ffffff;
+  background-color: var(--cor-de-fundo2);
   padding: 40px;
 }
 
@@ -155,11 +175,11 @@ main{
 }
 
 .lista-vantagens ul li:hover{
-  border-left: 4px solid #ee2211;
+  border-left: 4px solid var(--cor-primaria-hover);
 }
 
 .lista-vantagens ul li:nth-child(odd){
-  background-color: #f7f7f7;
+  background-color: var(--cor-de-fundo1);
 }
 
 .lista-vantagens h3, p{
@@ -173,7 +193,7 @@ main{
 
 /*FOOTER*/
 footer{
-  background-color: #ffffff;
+  background-color: var(--cor-de-fundo2);
   text-align: center;
   padding: 30px 0;
 }
@@ -182,7 +202,6 @@ footer{
 
 @media (max-width: 900px){
   main{
-    background-color: #ffffff;
     max-width: 650px;
     grid-template-columns: 1fr;
   }
