@@ -4,5 +4,5 @@ Desenvolvido para treinar conceitos de pseudo-elementos, posicionamento com CSS 
 
 Bikcraft1 - Exercício 309 / 03 CSS Posicionamento
 
-👉 https://marianapequeno.github.io/bikcraft_simples/
+👉 https://marianapequeno.github.io/bikcraftsimples/
 
