@@ -1,8 +1,8 @@
 # Exercício 309 Posicionamento - Curso de HTML e CSS
 
-Desenvolvido para treinar conceitos de pseudo-elementos, posicionamento com CSS grid layout, flexbox, position, media-queries, responsividade e variáveis - Curso HTML e CSS da Origamid
+Desenvolvido para treinar conceitos de pseudo-elementos, posicionamento com CSS grid layout, flexbox, position, media-queries, modo dark/light, responsividade e variáveis
 
 Bikcraft1 - Exercício 309 / 03 CSS Posicionamento
 
-👉 https://marianapequeno.github.io/bikcraftsimples/
+👉 https://marianapequeno.github.io/paginabikcraft/
 
